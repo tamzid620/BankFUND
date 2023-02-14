@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank FUND</title>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-sky-600">
+
+<header>
+    <h1 class="text-6xl text-center mt-5">Welcome to<span class="font-bold text-cyan-300 text-shadow">BankFUND</span></h1>                
+</header>
+  
+<main>
+    <div class="text-center mt-20 bg-sky-400 p-8 mx-60 rounded">
+        <h1 class="font-medium text-4xl mb-5">Your Account</h1>
+        
+        <div class="">
+            <input id="user-email" class="text-black px-10 py-1 rounded" type="text" placeholder="Your Email">
+            <input id="user-password" class="text-black px-10 py-1 rounded" type="text" placeholder="Your password">
+            <br>
+            <button id="btn-login" class="mt-5 font-semibold mt-5 bg-blue-400  hover:bg-cyan-400 p-2 rounded border border-neutral-900 bg-gradient-to-r from-cyan-500 to-blue-500 px-4">Login</button>               
+        </div>
+    </div>
+</main>
+    <script src=""></script>
+
+
+
+<script>
+    document.getElementById('btn-login').addEventListener('click',function(){
+        const emailField = document.getElementById('user-email');
+        const email = emailField.value;
+
+        const passwordField = document.getElementById('user-password');
+        const password = passwordField.value;
+
+        if(email === 'abcd@gmail.com' && password ==='abcd'){
+            location.href = 'account-info.html';
+        }
+        else{
+             alert('invalid user');
+             // location.href = bank.html;
+        }
+        })
+</script>
+
+
+</body>
+</html>
